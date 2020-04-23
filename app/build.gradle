@@ -1,0 +1,153 @@
+/*
+ * Copyright (c) 2018 Hai Zhang <dreaming.in.code.zh@gmail.com>
+ * All Rights Reserved.
+ */
+
+apply plugin: 'com.android.application'
+
+apply from: '../signing.gradle'
+
+android {
+    compileSdkVersion 29
+    ndkVersion '20.0.5594570'
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId 'com.goodwy.files'
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 102
+        versionName '1.0.2'
+        resValue 'string', 'app_version', versionName + ' (' + versionCode + ')'
+        buildConfigField 'String', 'FILE_PROVIDIER_AUTHORITY', 'APPLICATION_ID + ".file_provider"'
+        resValue 'string', 'app_provider_authority', applicationId + '.app_provider'
+        resValue 'string', 'file_provider_authority', applicationId + '.file_provider'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    lintOptions {
+        // For "Invalid package reference in library; not included in Android: javax.security.sasl.
+        // Referenced from org.apache.mina.proxy.ProxyAuthException."
+        warning 'InvalidPackage'
+    }
+}
+
+repositories {
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+dependencies {
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    releaseImplementation 'com.github.mypplication:stetho-noop:1.1'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-livedata:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-process:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-beta01'
+    implementation 'com.caverock:androidsvg-aar:1.4'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    debugImplementation 'com.facebook.stetho:stetho:1.5.1'
+    // If added along with okhttp3, remove the related dontwarn from proguard-rules.pro.
+    //debugImplementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation ('com.github.junrar:junrar:4.0.0') {
+        exclude group: 'commons-logging', module: 'commons-logging'
+    }
+    // As a replacement for commons-logging, to avoid the DuplicatePlatformClasses error due to
+    // httpclient depending on commons-logging and being removed in Android 6.0.
+    implementation 'org.slf4j:jcl-over-slf4j:1.7.30'
+    // 1.2.0-alpha01 breaks Design widgets in Theme.MaterialComponents.*.Bridge.
+    // https://github.com/material-components/material-components-android/issues/740
+    // TODO: Run `git revert 9fc8452` after upgrading to 1.2.0.
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.h6ah4i.android.materialshadowninepatch:materialshadowninepatch:1.0.0'
+    implementation 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:1.0.0'
+
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.3'
+    implementation 'com.leinardi.android:speed-dial:3.1.1'
+    implementation 'com.takisoft.preferencex:preferencex:1.1.0-alpha05'
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'com.takisoft.preferencex:preferencex-simplemenu:1.1.0-alpha05'
+    implementation 'de.psdev.licensesdialog:licensesdialog:2.1.0'
+    implementation 'eu.chainfire:librootjava:1.3.0'
+    implementation 'eu.chainfire:libsuperuser:1.1.0.201907261845'
+    implementation 'me.zhanghai.android.effortlesspermissions:library:1.1.0'
+    implementation 'me.zhanghai.android.fastscroll:library:1.1.2'
+    implementation 'me.zhanghai.android.foregroundcompat:library:1.0.0'
+    implementation 'me.zhanghai.android.libselinux:library:2.0.0'
+    implementation 'me.zhanghai.android.materialedittext:library:1.0.5'
+    implementation 'me.zhanghai.android.retrofile:library:1.1.0'
+    implementation 'me.zhanghai.android.systemuihelper:library:1.0.0'
+    implementation 'me.zhanghai.java.functional:android:1.0.0'
+    implementation 'me.zhanghai.java.promise:library:1.0.0'
+    implementation 'me.zhanghai.java.reflected:library:1.0.1'
+    implementation 'net.sourceforge.streamsupport:android-retrostreams:1.7.2'
+    implementation 'org.apache.commons:commons-compress:1.20'
+    // Optional dependency of Commons Compress for 7Z LZMA.
+    implementation 'org.tukaani:xz:1.8'
+    implementation 'org.apache.ftpserver:ftpserver-core:1.1.1'
+    implementation 'org.slf4j:slf4j-android:1.7.30'
+
+}
+
+//#ifdef NONFREE
+buildscript {
+    repositories {
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.31.2'
+    }
+}
+apply plugin: 'io.fabric'
+
+crashlytics {
+    enableNdk true
+}
+
+dependencies {
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics-ndk:2.1.1'
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.3'
+    }
+}
+apply plugin: 'com.google.gms.google-services'
+//#endif

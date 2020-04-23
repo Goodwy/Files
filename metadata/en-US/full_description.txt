@@ -1,0 +1,12 @@
+Fast file manager, open source.
+
+Features:
+- Without advertising.
+- light and dark themes.
+- Setting the colors of the interface.
+- simple interface.
+- root support.
+- FTP server support.
+- it is possible to open multiple windows.
+
+Based on the open source Material Files application.

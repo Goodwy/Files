@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "475592539412",
+    "firebase_url": "https://goodwyfiles.firebaseio.com",
+    "project_id": "goodwyfiles",
+    "storage_bucket": "goodwyfiles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475592539412:android:f06a41fa666a6b2153d601",
+        "android_client_info": {
+          "package_name": "com.goodwy.files"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475592539412-gq4s5jnp8s1rntlumc2s19j0cu97jdja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAih5Sz7loB9wLZitv5WfOj2TSp_ckzNpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475592539412-gq4s5jnp8s1rntlumc2s19j0cu97jdja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

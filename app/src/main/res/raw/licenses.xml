@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2018 Hai Zhang <dreaming.in.code.zh@gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<notices>
+
+    <notice>
+        <name>AndroidSVG</name>
+        <url>https://github.com/BigBadaboom/androidsvg</url>
+        <copyright>Copyright 2013 Paul LeBeau, Cave Rock Software Ltd.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>SubsamplingScaleImageView</name>
+        <url>https://github.com/davemorrissey/subsampling-scale-image-view</url>
+        <copyright>Copyright 2016 David Morrissey</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Stetho</name>
+        <url>https://github.com/facebook/stetho</url>
+        <copyright>Copyright 2015 Facebook Inc.</copyright>
+        <license>BSD 3-Clause License</license>
+    </notice>
+
+    <notice>
+        <name>Glide</name>
+        <url>https://github.com/bumptech/glide</url>
+        <copyright>Copyright 2014 Google, Inc.</copyright>
+        <license>BSD 2-Clause License</license>
+    </notice>
+
+    <notice>
+        <name>PhotoView</name>
+        <url>https://github.com/chrisbanes/PhotoView</url>
+        <copyright>Copyright 2011, 2012 Chris Banes</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Material Shadow 9-Patch</name>
+        <url>https://github.com/h6ah4i/android-materialshadowninepatch</url>
+        <copyright>Copyright 2015 Haruki Hasegawa</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Advanced RecyclerView</name>
+        <url>https://github.com/h6ah4i/android-advancedrecyclerview</url>
+        <copyright>Copyright 2015 Haruki Hasegawa</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>ButterKnife</name>
+        <url>https://github.com/JakeWharton/butterknife</url>
+        <copyright>Copyright 2013 Jake Wharton</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>ThreeTenABP</name>
+        <url>https://github.com/JakeWharton/ThreeTenABP</url>
+        <copyright>Copyright 2015 Jake Wharton</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Floating Action Button Speed Dial</name>
+        <url>https://github.com/leinardi/FloatingActionButtonSpeedDial</url>
+        <copyright>Copyright 2018 Roberto Leinardi</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>RecyclerView FastScroll</name>
+        <url>https://github.com/timusus/RecyclerView-FastScroll</url>
+        <copyright>Copyright 2016 Tim Malseed</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>librootjava</name>
+        <url>https://github.com/Chainfire/librootjava</url>
+        <copyright>Copyright 2018 Jorrit "Chainfire" Jongma</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>libsuperuser</name>
+        <url>https://github.com/Chainfire/libsuperuser</url>
+        <copyright>Copyright 2012 Jorrit "Chainfire" Jongma</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>EffortlessPermissions</name>
+        <url>https://github.com/zhanghai/EffortlessPermissions</url>
+        <copyright>Copyright 2017 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>AndroidFastScroll</name>
+        <url>https://github.com/zhanghai/AndroidFastScroll</url>
+        <copyright>Copyright 2019 Google LLC</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>AndroidForegroundCompat</name>
+        <url>https://github.com/google/AndroidForegroundCompat</url>
+        <copyright>Copyright 2019 Google LLC</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>libselinux-android</name>
+        <url>https://github.com/zhanghai/libselinux-android</url>
+        <copyright>Copyright 2019 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>MaterialEditText</name>
+        <url>https://github.com/zhanghai/MaterialEditText</url>
+        <copyright>Copyright 2015 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>AndroidRetroFile</name>
+        <url>https://github.com/zhanghai/AndroidRetroFile</url>
+        <copyright>Copyright 2018 Hai Zhang</copyright>
+        <license>GNU General Public License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>SystemUiHelper</name>
+        <url>https://github.com/zhanghai/SystemUiHelper</url>
+        <copyright>Copyright 2015 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Functional</name>
+        <url>https://github.com/zhanghai/Functional</url>
+        <copyright>Copyright 2018 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Promise</name>
+        <url>https://github.com/zhanghai/Promise</url>
+        <copyright>Copyright 2019 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Reflected</name>
+        <url>https://github.com/zhanghai/Reflected</url>
+        <copyright>Copyright 2018 Hai Zhang</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>android-retrostreams</name>
+        <url>https://github.com/retrostreams/android-retrostreams</url>
+        <copyright>Copyright 1994 Oracle and/or its affiliates</copyright>
+        <license>GNU General Public License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Apache Commons Compress</name>
+        <url>https://commons.apache.org/proper/commons-compress/</url>
+        <copyright>Copyright 2002 The Apache Software Foundation</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Apache FtpServer</name>
+        <url>https://mina.apache.org/ftpserver-project/index.html</url>
+        <copyright>Copyright 2003 The Apache Software Foundation</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+</notices>

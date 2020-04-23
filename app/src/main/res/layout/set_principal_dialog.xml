@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2019 Hai Zhang <dreaming.in.code.zh@gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="?listPreferredItemHeightSmall"
+        android:paddingStart="?dialogPreferredPadding"
+        android:paddingEnd="?dialogPreferredPadding"
+        android:background="@null"
+        android:drawablePadding="24dp"
+        android:drawableStart="@drawable/filter_icon_control_normal_24dp"
+        android:hint="@string/file_properties_permissions_set_principal_filter_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="?listPreferredItemHeight"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/empty"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollIndicators="top|bottom"
+            android:scrollbars="vertical" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/recursive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?listPreferredItemHeightSmall"
+        android:layout_marginStart="@dimen/dialog_padding_minus_4dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="?dialogPreferredPadding"
+        android:text="@string/file_properties_permissions_recursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+</LinearLayout>
