@@ -7,7 +7,7 @@
 
 <resources>
 
-    <string name="app_name">Files by Goodwy</string>
+    <string name="app_name">Files</string>
 
     <string name="close">Close</string>
     <string name="copy">Copy</string>
@@ -443,6 +443,7 @@
 
     <string name="about_title">About</string>
     <string name="about_version_title">Version</string>
+    <string name="about_lite_title">This is a free version of the app. There is no advertising in it and almost all the functionality is available. In the full version, the color adjustment of the interface will be available.</string>
     <string name="about_github_title">View on GitHub</string>
     <string name="about_change_log_title">What\'s new?</string>
     <string name="about_change_log_html_style" translatable="false">

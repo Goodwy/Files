@@ -7,7 +7,7 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name">Files by Goodwy</string>
+    <string name="app_name">Files</string>
 
     <string name="close">Закрыть</string>
     <string name="copy">Копировать</string>
@@ -495,6 +495,7 @@
 
     <string name="about_title">О программе</string>
     <string name="about_version_title">Версия</string>
+    <string name="about_lite_title">Это бесплатная версия приложения. В ней нет рекламы и доступен практически весь функционал. В полной версии будет доступна настройка цветов интерфейса.</string>
     <string name="about_github_title">Посмотреть на GitHub</string>
     <string name="about_change_log_title">Что нового?</string>
     <string name="about_licenses_title">Лицензии</string>

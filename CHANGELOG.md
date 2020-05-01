@@ -1,3 +1,8 @@
+# 1.0.3
+* Fixed translation.
+* Changed the application icon.
+
+
 # 1.0.2
 * In the navigation side curtain, the view of the current directory is changed.
 * Added German and Portuguese (Brazil) translation.

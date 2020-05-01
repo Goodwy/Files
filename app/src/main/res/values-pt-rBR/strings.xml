@@ -7,7 +7,7 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name">Material Files</string>
+    <string name="app_name">Files</string>
 
     <string name="close">Fechar</string>
     <string name="copy">Copiar</string>
@@ -442,6 +442,7 @@
 
     <string name="about_title">Sobre</string>
     <string name="about_version_title">Versão</string>
+    <string name="about_lite_title">Esta é uma versão gratuita do aplicativo. Não há publicidade e quase toda a funcionalidade está disponível. Na versão completa, o ajuste de cores da interface estará disponível.</string>
     <string name="about_github_title">Ver no GitHub</string>
     <string name="about_change_log_title">Novidades</string>
     <string name="about_licenses_title">Licenças</string>

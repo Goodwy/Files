@@ -417,6 +417,7 @@
 
     <string name="about_title">关于</string>
     <string name="about_version_title">版本</string>
+    <string name="about_lite_title">这是该应用程序的免费版本。 其中没有广告，几乎所有功能都可用。 在完整版中，界面的颜色调整将可用。</string>
     <string name="about_github_title">在 GitHub 上查看</string>
     <string name="about_change_log_title">最新消息</string>
     <string name="about_licenses_title">许可证</string>
